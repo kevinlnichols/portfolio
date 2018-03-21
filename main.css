@@ -282,18 +282,6 @@ footer {
     font-weight: 700;
 }
 
-.image-1 {
-    background-image: url(photos/quick-search.jpg);
-}
-
-.image-2 {
-    background-image: url(photos/test-creator.jpg);
-}
-
-.image-3 {
-    background-image: url(photos/restaurant.jpg);
-}
-
 @media only screen and (max-width:1000px) {
     .wrapper {
         padding: 0 4%;
