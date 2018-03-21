@@ -10,7 +10,7 @@ $(document).ready(function() {
     $('.work-left').addClass('hidden').viewportChecker({
         classToAdd: 'visible animated slideInLeft',
         offset: 100,
-        repeat: true
+        repeat: false
     });
 });
 
@@ -18,6 +18,6 @@ $(document).ready(function() {
     $('.work-right').addClass('hidden').viewportChecker({
         classToAdd: 'visible animated slideInRight',
         offset: 100,
-        repeat: true
+        repeat: false
     });
 });
