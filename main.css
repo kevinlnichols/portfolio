@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End CSS Reset*/
+
+body {
+    background-color: snow;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    -o-transition: 5s;
+    -ms-transition: 5s;
+    -moz-transition: 5s;
+    -webkit-transition: 5s;
+    transition: 5s;
+    text-decoration: none;
+}
+
+em {
+    font-style: oblique;
+}
+
+strong {
+    font-style: bold;
+}
+
+img {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.image-3 {
+    margin-top: 25px;
+}
+
+h1,h2,h3,h4,h5 {
+    font-style: normal;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 1.875em;
+    padding: 0 0 1% 0;
+    font-weight: 800;
+}
+
+header {
+    background: url(photos/indyskyline-cropped.jpg);
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    padding: 9% 0;
+    box-shadow: 0.6px 0.6px 0.6px;
+}
+
+.intro {
+    max-width: 960px;
+    margin-left: 0 auto;
+    padding: 18% 0;
+    display: inline;
+}
+
+.intro  h1 {
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    line-height: 1.5em;
+    color: rgb(223, 206, 201);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about {
+    padding: 4% 0;
+}
+
+.about p {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: .03em;
+    margin-left: 10px auto;
+    font-size: 1.5em;
+    padding: 2% 0;
+}
+
+.about p a {
+    border-bottom: 2px solid;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.work {
+    height: 400px;
+    padding: 2% 0;
+}
+
+.work h3 {
+    padding: 4% 0;
+}
+
+.text-box {
+    float: left;
+    text-align: left;
+    width: 480px;
+    height: 100%;
+}
+
+.text-box-content {
+    padding: 4% 8%;
+}
+
+.text-box-content p {
+    line-height: 1.6;
+    letter-spacing: .03em;
+    font-size: 1em;
+}
+
+.button {
+    background-color: rgb(192, 56, 22);
+    color: snow;
+    padding: 5% 3%;
+    border: 1px solid black;
+    letter-spacing: 02.em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 4%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 2px #202020;
+}
+
+.image-area {
+    width: 480px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.contact {
+    width: 100%;
+    padding: 5% 0;
+    margin-top: 5%;
+    clear: both;
+}
+
+.contact-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h4 {
+    font-size: 16px;
+    padding: 1% 0;
+    font-weight: 600;
+}
+
+.contact-content a {
+    text-decoration: none;
+}
+
+.image-divider {
+    padding: 14% 0;
+    background: url(photos/indy-canal.jpg);
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 0.6px 0.6px 0.6px;
+}
+
+footer {
+    padding: 2% 0;
+    width: 100%;
+    clear: both;
+    height: 100px;
+}
+
+.footer {
+    max-width: 960px;
+    padding: 2% 0;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.credit {
+    float: left;
+    margin-left: 15px;
+}
+
+.social {
+    float: right;
+    margin-right: 15px;
+}
+
+.social li {
+    display: inline;
+}
+
+.social li a {
+    padding: 0.2em;
+    font-weight: 600;
+}
+
+.social li a:hover {
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .wrapper {
+        padding: 0 4%;
+    }
+    .work {
+        padding: 4% 0;
+    }
+    .image-area {
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .text-box {
+        width: 100%;
+        height: auto;
+    }
+    .social li a {
+        font-size: 1.4em;
+    }
+    .footer-content {
+        padding: 3.5%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .intro h1 {
+        font-size: 4em;
+        line-height: 1.2;
+        margin: 20px;
+    }
+    .intro h2 {
+        font-size: 1.8em;
+        padding-top: 3%;
+    }
+    .about p {
+        font-size: 1em;
+        line-height: 2;
+    }
+    footer {
+        height: 130px;
+        line-height: 1.3em;
+    }
+    .footer-content {
+        padding: 4%;
+        font-size: 14px;
+    }
+    .social {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .social li a {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .contact-content {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+
+
+
