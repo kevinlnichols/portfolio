@@ -7,111 +7,122 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kevin Nichols' Portfolio</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="main.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./jquery.viewportchecker.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="intro">
-            <h1>Hello, I'm Kevin Nichols</h1>
-
-        </div>
-    </header>
-    <div class="wrapper">
-        <section class="about">
-            <div class="about-content">
-                <h3>I'm a web developer based in Indianapolis Indiana</h3>
-                <p>I first dipped my toe into the coding world with free tutorials online that I would complete in my spare
-                    time. I learned to love coding because it is challenging, and seeing ideas come to fruition is very fulfilling.
-                    I'm looking forward to working on new projects that will challenge me and help me learn new frameworks
-                    and libraries. I'm a lifelong learner and I am excited to reach even higher and become a better programmer
-                    every day.</p>
-            </div>
-        </section>
-        <h3>My work</h3>
-        <section class="work">
-            <div class="image-area left col">
-                <img class="image-1" src="./photos/quick-search.jpg" alt="Quick Search">
-            </div>
-            <div class="text-box col">
-                <div class="text-box-content">
-                    <h3>Quick Search</h3>
-                    <p>Enter a search term and receive data from Google Books, Wikipedia, and YouTube simultaneously
-                        <br>
-                        <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, and jQuery
-                    </p>
-                    <a href="https://kevinlnichols.github.io/Quick-Search/" target="_blank" class="button">Live Demo</a>
-                    <a href="https://github.com/kevinlnichols/Quick-Search" target="_blank" class="button">Source Code</a>
+    <main role="main">
+        <header>
+            <div class="intro">
+                <h1>Hello, I'm Kevin Nichols</h1>
+                <div className="red-arrow">
+                    <a href="#about">
+                        <img class="arrow" src="./icons/down-arrow.png" alt="Down arrow to short bio" />
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section class="work work-right">
-            <div class="image-area right col">
-                <img class="image-2" src="./photos/test-creator.jpg" alt="Test Creator">
-            </div>
-            <div class="text-box col">
-                <div class="text-box-content">
-                    <h3>Test Creator</h3>
-                    <p>Sign up as an admin to create user profiles and tests. Then assign the user profiles to people and have
-                        them take the tests.
-                        <br>
-                        <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, jQuery, AJAX, Node.js, Express, Mocha, Chai, Mongo,
-                        Mongoose, bcryptjs, Passport, Heroku, TravisCI, mLab
-                    </p>
-                    <a href="http://desolate-reaches-36425.herokuapp.com" target="_blank" class="button">Live Demo</a>
-                    <a href="https://github.com/kevinlnichols/test-creator" target="_blank" class="button">Source Code</a>
+        </header>
+        <div class="wrapper">
+            <section id="about" class="about">
+                <div class="about-content">
+                    <h3>I'm a web developer based in Indianapolis Indiana</h3>
+                    <p>I first dipped my toe into the coding world with free tutorials online that I would complete in my spare
+                        time. I learned to love coding because it is challenging, and seeing ideas come to fruition is very
+                        fulfilling. I'm looking forward to working on new projects that will challenge me and help me learn
+                        new frameworks and libraries. I'm a lifelong learner and I am excited to reach even higher and become
+                        a better programmer every day.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="work">
-            <div class="image-area left col">
-                <img class="image-3" src="./photos/restaurant.jpg" alt="">
-            </div>
-            <div class="text-box col">
-                <div class="text-box-content">
-                    <h3>Restaurant Finder</h3>
-                    <p>Sign up and find friends and coworkers. Vote on restaurant categories, and then find nearby restaurants with the highest vote total.
-                        <br>
-                        <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, React, Redux, TravisCI, mLab
-                    </p>
-                    <a href="" target="_blank" class="button">Live Demo</a>
-                    <a href="" target="_blank" class="button">Source Code</a>
+            </section>
+            <h3 class="work-left">My work</h3>
+            <section class="work work-left">
+                <div class="image-area left col">
+                    <img class="image-1" src="./photos/quick-search.jpg" alt="Quick Search">
                 </div>
+                <div class="text-box col">
+                    <div class="text-box-content">
+                        <h3>Quick Search</h3>
+                        <p>Enter a search term and receive data from Google Books, Wikipedia, and YouTube simultaneously
+                            <br>
+                            <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, and jQuery
+                        </p>
+                        <a href="https://kevinlnichols.github.io/Quick-Search/" target="_blank" class="button animated shake">Live Demo</a>
+                        <a href="https://github.com/kevinlnichols/Quick-Search" target="_blank" class="button">Source Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work work-right">
+                <div class="image-area right col">
+                    <img class="image-2" src="./photos/test-creator.jpg" alt="Test Creator">
+                </div>
+                <div class="text-box col">
+                    <div class="text-box-content">
+                        <h3>Test Creator</h3>
+                        <p>Sign up as an admin to create user profiles and tests. Then assign the user profiles to people and
+                            have them take the tests.
+                            <br>
+                            <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, jQuery, AJAX, Node.js, Express, Mocha, Chai,
+                            Mongo, Mongoose, bcryptjs, Passport, Heroku, TravisCI, mLab
+                        </p>
+                        <a href="http://desolate-reaches-36425.herokuapp.com" target="_blank" class="button">Live Demo</a>
+                        <a href="https://github.com/kevinlnichols/test-creator" target="_blank" class="button">Source Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work work-left">
+                <div class="image-area left col">
+                    <img class="image-3" src="./photos/restaurant.jpg" alt="">
+                </div>
+                <div class="text-box col">
+                    <div class="text-box-content">
+                        <h3>Restaurant Finder</h3>
+                        <p>Sign up and find friends and coworkers. Vote on restaurant categories, and then find nearby restaurants
+                            with the highest vote total.
+                            <br>
+                            <span style="font-weight: bold">Technologies Used:</span> HTML, CSS, JavaScript, React, Redux, TravisCI, mLab
+                        </p>
+                        <a href="" target="_blank" class="button">Live Demo</a>
+                        <a href="" target="_blank" class="button">Source Code</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="contact">
+            <div class="contact-content">
+                <h4>Email me:
+                    <a class="email" href="mailto:kevinlnichols@gmail.com">kevinlnichols@gmail.com</a>
+                </h4>
             </div>
         </section>
-    </div>
+        <div class="image-divider">
 
-    <section class="contact">
-        <div class="contact-content">
-            <h4>Email me:
-                <a class="email" href="mailto:kevinlnichols@gmail.com">kevinlnichols@gmail.com</a>
-            </h4>
         </div>
-    </section>
-    <div class="image-divider">
 
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <p class="credit">Indy Skyline photo credit: Photo by @mikehutch40 via Twenty20
-                <br>Indy canal photo: Photo by @brockw20 via Twenty20
-                <br>Designed and developed by Kevin Nichols</p>
-            <ul class="social">
-                <li>
-                    <a href="www.linkedin.com/in/kevin-nichols-a9518b129" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/kevinlnichols" target="_blank">GitHub</a>
-                </li>
-                <li>
-                    <a href="photos/cv.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer-content">
+                <p class="credit">Indy Skyline photo credit: Photo by @mikehutch40 via Twenty20
+                    <br>Indy canal photo: Photo by @brockw20 via Twenty20
+                    <br>Designed and developed by Kevin Nichols</p>
+                <ul class="social">
+                    <li>
+                        <a href="www.linkedin.com/in/kevin-nichols-a9518b129" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kevinlnichols" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="photos/cv.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
 
 </body>
 
